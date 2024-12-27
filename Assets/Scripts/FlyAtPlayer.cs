@@ -8,10 +8,14 @@ public class FlyAtPlayer : MonoBehaviour
 
     Vector3 playerPosition;
 
-    void Start()
+    void Awake()
+    {
+        gameObject.SetActive(false);
+    }
+    private void Start()
     {
         playerPosition = player.position;
-    }
+    }   
 
     void Update()
     {

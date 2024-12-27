@@ -9,8 +9,8 @@ public class TriggerProjectile : MonoBehaviour
     [SerializeField] GameObject projectile3;
     [SerializeField] GameObject projectile4;
 
-    private void OnTriggerEnter(Collider other)
-    {        
+    void OnTriggerEnter(Collider other)
+    {
         if (other.gameObject.tag == "Player")
         {
             projectile.SetActive(true);
@@ -18,6 +18,7 @@ public class TriggerProjectile : MonoBehaviour
             projectile2.SetActive(true);
             projectile3.SetActive(true);
             projectile4.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
