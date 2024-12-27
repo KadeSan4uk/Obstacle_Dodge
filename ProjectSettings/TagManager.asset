@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Hit
+  - TriggerOn
   layers:
   - Default
   - TransparentFX

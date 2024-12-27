@@ -30,7 +30,7 @@ public class FlyAtPlayer : MonoBehaviour
 
     void DestroyWhenReached()
     {
-        if (transform.position == playerPosition)
+        if (Vector3.Distance(transform.position, playerPosition) < 0.01f)
         {
             Destroy(gameObject);
         }
